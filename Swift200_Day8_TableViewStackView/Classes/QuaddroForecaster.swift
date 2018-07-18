@@ -8,7 +8,7 @@
 
 import Foundation
 
-func forecast(forCity city:String) -> (temp:Int, icon:String, iconCode:String)? {
+func forecast(forCity city:String) -> (temp:Int, icon:String)? {
     
     //let apikey  = "3c11dc2f82d273949cf81fd6889fa559" //lino
     let apikey  = "1330aa266c35b6346443e1a54443ff5d"
@@ -36,5 +36,5 @@ func forecast(forCity city:String) -> (temp:Int, icon:String, iconCode:String)? 
     default: icon = "🌞"
     }
     
-    return (Int(temp), icon, iconCode)
+    return (Int(temp), icon)
 }
